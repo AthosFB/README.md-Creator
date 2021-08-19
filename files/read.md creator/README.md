@@ -4,9 +4,9 @@
 
 <hr>
 
- - Iniciante:
- - 9º Ano / 14 anos
- - Meta: Full-Stack
+ - one
+ - two
+ - thee
 
  <hr>
  <ul type="square">
@@ -31,10 +31,10 @@
 <hr>
  <h1>Social Medias</h1>
 <div> 
-  <a href="https://www.instagram.com/athosfavaron/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>
+
+  ### None
  
  <h1>Visits!</h1>
  </div> 
 
-![Visitor Count](https://profile-counter.glitch.me/{AthosFB}/count.svg)
- 
+![Visitor Count](https://profile-counter.glitch.me/AthosFB/count.svg)
