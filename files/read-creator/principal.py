@@ -1,5 +1,14 @@
 from time import sleep
 
+try:
+    arq = open("README.md", "rt")
+    arq.close()
+except FileNotFoundError:
+    arq = open("README.md", "wt+")
+    print("the file was created")
+else:
+    print("File Exists")
+
 infos = list()
 langu = list()
 langutxt = list()
@@ -15,32 +24,32 @@ proling = {"python": '<img align="center" alt="Python" height="60" width="80" sr
            "php": '<img align="center" alt="Java" height="80" width="80" src="https://storage.googleapis.com/hcode.com.br/courses/1/logo_svg5f7f6e392a041.svg">',
            "c": '<img align="center" alt="Java" height="80" width="80" src="https://camo.githubusercontent.com/fa78f1cf0a8057e7dde71b15370855b874b7b39de045bf053ac344bebb71047b/68747470733a2f2f63646e2e69636f6e73636f75742e636f6d2f69636f6e2f667265652f706e672d3235362f632d70726f6772616d6d696e672d3536393536342e706e67">',
            "c++": '<img align="center" alt="Java" height="80" width="80" src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png">'}
-
+print("---" * 15)
 account = str(input("Put the Name of you GitHub account: ")).strip()
-
+print("---" * 15)
 insta = str(input("Put The Name Of your Instagram Account (N/A to don't put): ")).strip()
-
+print("---" * 15)
 theme = str(input("Put The Name Of o Theme (https://github.com/AthosFB/README.md-Creator/"
                   "tree/main/files/Themes/All%20Themes): ")).strip().lower()
-
+print("---" * 15)
 social = ""
 insta = f'https://www.instagram.com/{insta}/'
-if insta != "https://www.instagram.com/N/A/":
+if insta.lower() != "https://www.instagram.com/n/a/":
     social = f'<a href="{insta}" target="_blank"><img src="https://img.shields.io/badge/'\
              '-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>'
 else:
     social = "### None"
 
 print("Put 3 Information of YOU!")
-sleep(0.000003)
+sleep(2)
 for i in range(1, 4):
     infos.append(str(input(f"Put The {i}st Information: ")))
 
 lannum = int(input("How Many Programming Languages you Know? "))
 for l in range(1, lannum + 1):
-    langu.append(str(input(f"Put The Name Of the {l}st language: ")))
+    langu.append(str(input(f"Put The Name Of the {l}st language: ")).lower().strip())
 for lan in langu:
-    langutxt.append(f'<li>{lan}<br>')
+    langutxt.append(f'<li>{lan.title()}<br>')
 for i in langutxt:
     lantxtfinal = f"""{lantxtfinal} 
 {i}
@@ -51,6 +60,8 @@ for k, i in proling.items():
         know = f"""{know}
 {i}
 """
+if len(know) == 0:
+    know = "Others"
 text = f"""
 # Welcome To My Profile!
 ***
@@ -95,4 +106,9 @@ text = f"""
 ![Visitor Count](https://profile-counter.glitch.me/{account}/count.svg)
 """
 
-print(text)
+try:
+    arq.write(text)
+except:
+    print("An error has occurred")
+else:
+    print("Your File Has been Created!")
