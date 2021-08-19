@@ -8,7 +8,7 @@ account = str(input("Put the Name of you GitHub account: ")).strip()
 
 insta = str(input("Put The Name Of your Instagram Account (N/A to don't put): ")).strip()
 
-theme = str(input("Put The Name Of o Theme (All The Themes are in the files): "))
+theme = str(input("Put The Name Of o Theme (All The Themes are in the files): ")).strip().lower()
 
 social = ""
 insta = f'https://www.instagram.com/{insta}/'
@@ -57,6 +57,9 @@ text = f"""
   
   <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={account}&layout=compact&include_all_commits=true&show_icons=true&line_height=21&theme={theme}"></a>
 </div>
+
+### Knowledge
+ 
  
  
 <hr>
