@@ -8,6 +8,8 @@ account = str(input("Put the Name of you GitHub account: ")).strip()
 
 insta = str(input("Put The Name Of your Instagram Account (N/A to don't put): ")).strip()
 
+theme = str(input("Put The Name Of o Theme (All The Themes are in the files): "))
+
 social = ""
 insta = f'https://www.instagram.com/{insta}/'
 if insta != "https://www.instagram.com/N/A/":
@@ -51,11 +53,10 @@ text = f"""
  <hr>
  <div>
   <a href="https://github.com/{account}">
-  <img height="120em" src="https://github-readme-stats.vercel.app/api?username={account}&layout=compact&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,420000,120042&theme=dark">
+  <img height="120em" src="https://github-readme-stats.vercel.app/api?username={account}&layout=compact&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&theme={theme}">
   
-  <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={account}&layout=compact&include_all_commits=true&show_icons=true&line_height=21&bg_color=0,420000,120042&theme=dark"></a>
+  <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={account}&layout=compact&include_all_commits=true&show_icons=true&line_height=21&theme={theme}"></a>
 </div>
- 
  
  
 <hr>
