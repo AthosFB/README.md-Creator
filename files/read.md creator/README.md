@@ -11,11 +11,7 @@
  <hr>
  <ul type="square">
      <p>
-     <li><a href="https://www.python.org" target="_blank" rel="external">Python🐍</a>     
-     <li><a href="https://www.mysql.com" target="_blank" rel="external">MySQL💸🎲</a> 
-     <li><a href="https://code.visualstudio.com" target="_blank" rel="external">HTML5💻</a>  
-     <li><a href="https://code.visualstudio.com" target="_blank" rel="external">CSS3💻</a>   
-     <li><a href="https://nodejs.org/en/" target="_blank" rel="external">JavaScript💻</a>    
+    <li>7<br><li>8<br><li>9<br><li>10<br><li>12<br><li>12<br>  
 
  </ul>
  <br>

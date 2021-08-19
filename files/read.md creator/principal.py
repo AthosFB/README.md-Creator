@@ -1,8 +1,13 @@
 from time import sleep
 infos = list()
 langu = list()
+langutxt = list()
+lantxtfinal = ""
+
 account = str(input("Put the Name of you GitHub account: ")).strip()
+
 insta = str(input("Put The Name Of your Instagram Account (N/A to don't put): ")).strip()
+
 social = ""
 insta = f'https://www.instagram.com/{insta}/'
 if insta != "https://www.instagram.com/N/A/":
@@ -10,13 +15,19 @@ if insta != "https://www.instagram.com/N/A/":
              '-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>'
 else:
     social = "### None"
+
 print("Put 3 Information of YOU!")
-sleep(3)
+sleep(0.000003)
 for i in range(1, 4):
     infos.append(str(input(f"Put The {i}st Information: ")))
+
 lannum = int(input("how Many programming languages you know? "))
 for l in range(1, lannum + 1):
     langu.append(str(input(f"Put The Name Of the {l}st language: ")))
+for lan in langu:
+    langutxt.append(f'<li>{lan}<br>')
+for i in langutxt:
+    lantxtfinal = lantxtfinal + i
 text = f"""
 # Welcome To My Profile!
 ***
@@ -31,11 +42,8 @@ text = f"""
  <hr>
  <ul type="square">
      <p>
-     <li><a href="https://www.python.org" target="_blank" rel="external">Python🐍</a>     
-     <li><a href="https://www.mysql.com" target="_blank" rel="external">MySQL💸🎲</a> 
-     <li><a href="https://code.visualstudio.com" target="_blank" rel="external">HTML5💻</a>  
-     <li><a href="https://code.visualstudio.com" target="_blank" rel="external">CSS3💻</a>   
-     <li><a href="https://nodejs.org/en/" target="_blank" rel="external">JavaScript💻</a>    
+     
+        {lantxtfinal} 
 
  </ul>
  <br>
