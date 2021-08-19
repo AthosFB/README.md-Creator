@@ -76,7 +76,6 @@ text = f"""
  <hr>
  <ul type="square">
      <p>
-     
         {lantxtfinal} 
 
  </ul>
@@ -91,8 +90,9 @@ text = f"""
 
 ### Knowledge
 
+<div style="display: inline_block"><br>
 {know}
- 
+</div>
  
 <hr>
  <h1>Social Medias</h1>
