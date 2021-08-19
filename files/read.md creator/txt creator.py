@@ -1,4 +1,4 @@
-def criar():
+def create():
     try:
         arq = open("README.md", "rt")
         arq.close()

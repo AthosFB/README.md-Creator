@@ -33,7 +33,7 @@
 <div> 
   <a href="https://www.instagram.com/athosfavaron/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>
  
- <h1>Visitas!</h1>
+ <h1>Visits!</h1>
  </div> 
 
 ![Visitor Count](https://profile-counter.glitch.me/{AthosFB}/count.svg)
