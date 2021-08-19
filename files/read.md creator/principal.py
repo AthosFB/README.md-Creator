@@ -21,13 +21,14 @@ sleep(0.000003)
 for i in range(1, 4):
     infos.append(str(input(f"Put The {i}st Information: ")))
 
-lannum = int(input("how Many programming languages you know? "))
+lannum = int(input("How Many Programming Languages you Know? "))
 for l in range(1, lannum + 1):
     langu.append(str(input(f"Put The Name Of the {l}st language: ")))
 for lan in langu:
     langutxt.append(f'<li>{lan}<br>')
 for i in langutxt:
-    lantxtfinal = lantxtfinal + i
+    lantxtfinal = f"""{lantxtfinal} 
+{i}"""
 text = f"""
 # Welcome To My Profile!
 ***
@@ -50,11 +51,9 @@ text = f"""
  <hr>
  <div>
   <a href="https://github.com/{account}">
-  <img height="120em" src="https://github-readme-stats.vercel.app/api?username={account}&layout=compact&hide_title=true
-  &hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,420000,120042&theme=dark">
+  <img height="120em" src="https://github-readme-stats.vercel.app/api?username={account}&layout=compact&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&line_height=21&bg_color=0,420000,120042&theme=dark">
   
-  <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={account}&layout=
-  compact&include_all_commits=true&show_icons=true&line_height=21&bg_color=0,420000,120042&theme=dark"></a>
+  <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={account}&layout=compact&include_all_commits=true&show_icons=true&line_height=21&bg_color=0,420000,120042&theme=dark"></a>
 </div>
  
  
