@@ -2,13 +2,25 @@ from time import sleep
 infos = list()
 langu = list()
 langutxt = list()
-lantxtfinal = ""
+lantxtfinal = know = ""
+
+proling = {"python": '<img align="center" alt="Python" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">',
+           "mysql": '<img align="center" alt="MySQL" height="120" width="120" src="https://waresoft.com.br/wp-content/uploads/2021/04/MySQL_Logo_600x600.png">',
+           "css3": '<img align="center" alt="Athos-CSS" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">',
+           "html5": '<img align="center" alt="HTML" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">',
+           "javascript": '<img align="center" alt="Js" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">',
+           "js": '<img align="center" alt="Js" height="60" width="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">',
+           "java": '<img align="center" alt="Java" height="80" width="80" src="https://alternativesoft.info/icons/java.png">',
+           "php": '<img align="center" alt="Java" height="80" width="80" src="https://storage.googleapis.com/hcode.com.br/courses/1/logo_svg5f7f6e392a041.svg">',
+           "c": '<img align="center" alt="Java" height="80" width="80" src="https://camo.githubusercontent.com/fa78f1cf0a8057e7dde71b15370855b874b7b39de045bf053ac344bebb71047b/68747470733a2f2f63646e2e69636f6e73636f75742e636f6d2f69636f6e2f667265652f706e672d3235362f632d70726f6772616d6d696e672d3536393536342e706e67">',
+           "c++": '<img align="center" alt="Java" height="80" width="80" src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png">'}
 
 account = str(input("Put the Name of you GitHub account: ")).strip()
 
 insta = str(input("Put The Name Of your Instagram Account (N/A to don't put): ")).strip()
 
-theme = str(input("Put The Name Of o Theme (All The Themes are in the files): ")).strip().lower()
+theme = str(input("Put The Name Of o Theme (https://github.com/AthosFB/README.md-Creator/"
+                  "tree/main/files/Themes/All%20Themes): ")).strip().lower()
 
 social = ""
 insta = f'https://www.instagram.com/{insta}/'
@@ -30,7 +42,14 @@ for lan in langu:
     langutxt.append(f'<li>{lan}<br>')
 for i in langutxt:
     lantxtfinal = f"""{lantxtfinal} 
-{i}"""
+{i}
+"""
+
+for k, i in proling.items():
+    if k in langu:
+        know = f"""{know}
+{i}
+"""
 text = f"""
 # Welcome To My Profile!
 ***
@@ -59,7 +78,8 @@ text = f"""
 </div>
 
 ### Knowledge
- 
+
+{know}
  
  
 <hr>
