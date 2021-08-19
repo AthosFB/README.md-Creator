@@ -1,4 +1,5 @@
 from time import sleep
+
 infos = list()
 langu = list()
 langutxt = list()
