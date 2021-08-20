@@ -1,13 +1,13 @@
 from time import sleep
 
 try:
-    arq = open("README.md", "rt")
+    arq = open("../README.md", "rt")
     arq.close()
 except FileNotFoundError:
-    arq = open("README.md", "wt+")
-    print("the file was created")
+    arq = open("../README.md", "wt+")
+    print("O Arquivo Foi Criado")
 else:
-    print("File Exists")
+    print("O Arquivo Já Existe")
 
 infos = list()
 langu = list()
@@ -25,11 +25,11 @@ proling = {"python": '<img align="center" alt="Python" height="60" width="80" sr
            "c": '<img align="center" alt="Java" height="80" width="80" src="https://camo.githubusercontent.com/fa78f1cf0a8057e7dde71b15370855b874b7b39de045bf053ac344bebb71047b/68747470733a2f2f63646e2e69636f6e73636f75742e636f6d2f69636f6e2f667265652f706e672d3235362f632d70726f6772616d6d696e672d3536393536342e706e67">',
            "c++": '<img align="center" alt="Java" height="80" width="80" src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png">'}
 print("---" * 15)
-account = str(input("Put the Name of you GitHub account: ")).strip()
+account = str(input("Coloque O nome da sua conta GitHub: ")).strip()
 print("---" * 15)
-insta = str(input("Put The Name Of your Instagram Account (N/A to don't put): ")).strip()
+insta = str(input("Coloque O nome da sua conta Instagram (N/A Para Não Colocar): ")).strip()
 print("---" * 15)
-theme = str(input("Put The Name Of o Theme (https://github.com/AthosFB/README.md-Creator/"
+theme = str(input("Coloque O nome Do tema (https://github.com/AthosFB/README.md-Creator/"
                   "tree/main/files/Themes/All%20Themes): ")).strip().lower()
 print("---" * 15)
 social = ""
@@ -40,14 +40,14 @@ if insta.lower() != "https://www.instagram.com/n/a/":
 else:
     social = "### None"
 
-print("Put 3 Information of YOU!")
+print("Coloque 3 informações sobre VOCÊ!")
 sleep(2)
 for i in range(1, 4):
-    infos.append(str(input(f"Put The {i}st Information: ")))
+    infos.append(str(input(f"Coloque a {i}º Informação: ")))
 
-lannum = int(input("How Many Programming Languages you Know? "))
+lannum = int(input("Quantas Linguagens de Programação você conhece? "))
 for l in range(1, lannum + 1):
-    langu.append(str(input(f"Put The Name Of the {l}st language: ")).lower().strip())
+    langu.append(str(input(f"Coloque o Nome Da {l}º linguagem: ")).lower().strip())
 for lan in langu:
     langutxt.append(f'<li>{lan.title()}<br>')
 for i in langutxt:
@@ -61,11 +61,11 @@ for k, i in proling.items():
 {i}
 """
 if len(know) == 0:
-    know = "Others"
+    know = "Outros"
 text = f"""
-# Welcome To My Profile!
+# Bem Vindo Ao Meu Perfil!
 ***
-### See My Projects!
+### Dá uma Olhada nos Meus Projetos!
 
 <hr>
 
@@ -89,7 +89,7 @@ text = f"""
 
 ***
 
-### Knowledge
+### Conhecimentos
 
 <div style="display: inline_block"><br>
 {know}
@@ -98,7 +98,7 @@ text = f"""
 ***
  
 <hr>
- <h1>Social Medias</h1>
+ <h1>Mídias Sociais</h1>
 <div> 
 
   {social}
