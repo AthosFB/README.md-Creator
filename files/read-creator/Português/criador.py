@@ -105,7 +105,7 @@ text = f"""
  
  ***
  
- <h1>Visits!</h1>
+ <h1>Visitas!</h1>
  </div> 
 
 ![Visitor Count](https://profile-counter.glitch.me/{account}/count.svg)
@@ -114,6 +114,6 @@ text = f"""
 try:
     arq.write(text)
 except:
-    print("An error has occurred")
+    print("Ocorreu Um Erro")
 else:
-    print("Your File Has been Created!")
+    print("Seu Arquivo Foi Criado!")
