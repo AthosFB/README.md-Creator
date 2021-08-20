@@ -25,11 +25,11 @@ proling = {"python": '<img align="center" alt="Python" height="60" width="80" sr
            "c": '<img align="center" alt="Java" height="80" width="80" src="https://camo.githubusercontent.com/fa78f1cf0a8057e7dde71b15370855b874b7b39de045bf053ac344bebb71047b/68747470733a2f2f63646e2e69636f6e73636f75742e636f6d2f69636f6e2f667265652f706e672d3235362f632d70726f6772616d6d696e672d3536393536342e706e67">',
            "c++": '<img align="center" alt="Java" height="80" width="80" src="https://www.alura.com.br/artigos/assets/formacao-linguagem-c-plus-plus/img-01.png">'}
 print("---" * 15)
-account = str(input("Coloque O nome da sua conta GitHub: ")).strip()
+account = str(input("Coloque o nome da sua conta GitHub: ")).strip()
 print("---" * 15)
-insta = str(input("Coloque O nome da sua conta Instagram (N/A Para Não Colocar): ")).strip()
+insta = str(input("Coloque o nome da sua conta Instagram (N/A Para Não Colocar): ")).strip()
 print("---" * 15)
-theme = str(input("Coloque O nome Do tema (https://github.com/AthosFB/README.md-Creator/"
+theme = str(input("Coloque o nome Do tema (https://github.com/AthosFB/README.md-Creator/"
                   "tree/main/files/Themes/All%20Themes): ")).strip().lower()
 print("---" * 15)
 social = ""
@@ -38,7 +38,7 @@ if insta.lower() != "https://www.instagram.com/n/a/":
     social = f'<a href="{insta}" target="_blank"><img src="https://img.shields.io/badge/'\
              '-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>'
 else:
-    social = "### None"
+    social = ""
 
 print("Coloque 3 informações sobre VOCÊ!")
 sleep(2)
@@ -65,7 +65,7 @@ if len(know) == 0:
 text = f"""
 # Bem Vindo Ao Meu Perfil!
 ***
-### Dá uma Olhada nos Meus Projetos!
+### Olha os Meus Projetos!
 
 <hr>
 
@@ -96,9 +96,7 @@ text = f"""
 </div>
  
 ***
- 
-<hr>
- <h1>Mídias Sociais</h1>
+
 <div> 
 
   {social}

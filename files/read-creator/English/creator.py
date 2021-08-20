@@ -38,7 +38,7 @@ if insta.lower() != "https://www.instagram.com/n/a/":
     social = f'<a href="{insta}" target="_blank"><img src="https://img.shields.io/badge/'\
              '-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>'
 else:
-    social = "### None"
+    social = ""
 
 print("Put 3 Information of YOU!")
 sleep(2)
@@ -97,8 +97,6 @@ text = f"""
  
 ***
  
-<hr>
- <h1>Social Medias</h1>
 <div> 
 
   {social}
