@@ -22,10 +22,8 @@
 <li>Html5<br>
  
 <li>Css3<br>
- 
 
  </ul>
- <br>
  <hr>
  <div>
   <a href="https://github.com/AthosFB">
@@ -34,7 +32,11 @@
   <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AthosFB&layout=compact&include_all_commits=true&show_icons=true&line_height=21&theme=vue"></a>
 </div>
 
+***
+
 ### Knowledge
+
+***
 
 <div style="display: inline_block"><br>
 
@@ -54,6 +56,8 @@
 
   <a href="https://www.instagram.com/athosfavaron/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=black"></a>
  
+***
+
  <h1>Visits!</h1>
  </div> 
 

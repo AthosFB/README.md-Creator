@@ -79,7 +79,6 @@ text = f"""
         {lantxtfinal} 
 
  </ul>
- <br>
  <hr>
  <div>
   <a href="https://github.com/{account}">
@@ -88,17 +87,23 @@ text = f"""
   <img height="120em" src="https://github-readme-stats.vercel.app/api/top-langs/?username={account}&layout=compact&include_all_commits=true&show_icons=true&line_height=21&theme={theme}"></a>
 </div>
 
+***
+
 ### Knowledge
 
 <div style="display: inline_block"><br>
 {know}
 </div>
  
+***
+ 
 <hr>
  <h1>Social Medias</h1>
 <div> 
 
   {social}
+ 
+ ***
  
  <h1>Visits!</h1>
  </div> 
